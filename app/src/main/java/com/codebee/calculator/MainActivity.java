@@ -15,9 +15,17 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.keypad_container,new FragmentKeypad1()).commit();
     }
 
-    public void setCalculatedResult(){
-        ((TextView)findViewById(R.id.result_text)).setText("Result set Successfully!");
+    public void displayData(String str){
+        ((TextView) findViewById(R.id.expression_text)).setText(str);
     }
 
+    public void setResult(String result){
+        ((TextView) findViewById(R.id.result_text)).setText(result);
+    }
+
+    public void clearAll(){
+        ((TextView) findViewById(R.id.expression_text)).setText("");
+        ((TextView) findViewById(R.id.result_text)).setText("");
+    }
 }
 
