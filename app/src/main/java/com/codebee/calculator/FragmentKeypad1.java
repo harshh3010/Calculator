@@ -227,12 +227,14 @@ public class FragmentKeypad1 extends Fragment {
                             break;
                         case 'P':
                             op1 = op1 * 3.14;
+                            res = op1;
                             break;
                         case 'f':
                             res = factorial(op1);
                             break;
                         case 'i':
                             op1 = 1 / op1;
+                            res = op1;
                             break;
                         case 'r':
                             res = Math.sqrt(op1);
